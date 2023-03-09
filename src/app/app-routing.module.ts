@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HomePageComponent } from './home-page/home-page.component';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
@@ -11,6 +12,11 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'main', component: HomePageComponent
+  },
+  
+  
 ];
 
 @NgModule({
